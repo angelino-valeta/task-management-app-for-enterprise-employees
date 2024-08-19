@@ -28,53 +28,62 @@ The Task Management System allows employees of a company to assign and move task
 
 
 src/
-application/
-ports/
-driver/
-TaskManagementPort.ts
-driven/
-TaskPersistencePort.ts
-NotificationPort.ts
-services/
-TaskManagementService.ts
-domain/
-Task.ts
-User.ts
-infrastructure/
-adapters/
-persistence/
-MySQLTaskRepository.ts
-InMemoryTaskRepository.ts
-notification/
-EmailNotificationAdapter.ts
-MockNotificationAdapter.ts
-web/
-controllers/
-TaskController.ts
-routes/
-tasks.ts
-tests/
-integration/
-TaskManagement.spec.ts
-
+  application/
+    ports/
+      driver/
+        TaskManagementPort.ts
+      driven/
+        TaskPersistencePort.ts
+        NotificationPort.ts
+    services/
+      TaskManagementService.ts
+  domain/
+    Task.ts
+    User.ts
+  infrastructure/
+    adapters/
+      persistence/
+        MySQLTaskRepository.ts
+        InMemoryTaskRepository.ts
+      notification/
+        EmailNotificationAdapter.ts
+        MockNotificationAdapter.ts
+    web/
+      controllers/
+        TaskController.ts
+      routes/
+        tasks.ts
+  tests/
+    integration/
+      TaskManagement.spec.ts
 
 ### Frontend (Angular)
 
 src/
-app/
-core/
-models/
-task.model.ts
-services/
-task.service.ts
-features/
-task-list/
-task-create/
-task-detail/
-shared/
-components/
-app.module.ts
-app.component.ts
+  app/
+    core/
+      models/
+        task.model.ts
+      services/
+        task.service.ts
+    features/
+      task-list/
+        task-list.component.ts
+        task-list.component.html
+      task-create/
+        task-create.component.ts
+        task-create.component.html
+      task-detail/
+        task-detail.component.ts
+        task-detail.component.html
+    shared/
+      components/
+        header/
+          header.component.ts
+          header.component.html
+    app.module.ts
+    app.component.ts
+    app.component.html
 
 
 
